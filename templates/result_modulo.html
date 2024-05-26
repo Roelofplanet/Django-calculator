@@ -1,3 +1,7 @@
+{% extends 'base.html'%}
+
+{% block content %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,10 +12,11 @@
 <body>
     
     <div class="center">
-        The result is: 
-        <h1>{{ans}}</h1>
-        
-        <a href="{% url 'home' %}">Go Back</a>
+        <h4>De restwaarde is:</h4>
+        <br>
+        <h1>{{ans|floatformat:2}}</h1>
+        <br>
+        <a href="{% url 'home' %}" class="btn btn-secondary" role="button">Terug</a>
         </div>
         <style>
           .center {
@@ -24,3 +29,4 @@
   </body>
 </html>
 
+{% endblock %}

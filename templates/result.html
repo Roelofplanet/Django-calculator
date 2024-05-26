@@ -1,0 +1,33 @@
+{% extends 'base.html'%}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="center">
+        <h4>Het resultaat is:</h4>
+        <br>
+        <h1>{{ans|floatformat:2}}</h1>
+        <br>
+        <a href="{% url 'home' %}" class="btn btn-secondary" role="button">Terug</a>
+        </div>
+        <style>
+          .center {
+            margin: auto;
+            width: 60%;
+            border: 3px solid #a5addb;
+            padding: 10px;
+          }
+        </style>
+  </body>
+</html>
+
+{% endblock %}
+

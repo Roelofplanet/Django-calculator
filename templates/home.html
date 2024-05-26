@@ -1,0 +1,40 @@
+{% extends 'base.html'%}
+
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+  
+
+  <br><br><br>
+
+  <div class="container">
+    <div class="col d-flex justify-content-center">
+
+  <div class="card" style="width: 38rem;">
+    <div class="card-body">
+
+
+      <div class="d-grid gap-2 col-6 mx-auto">
+      <a href="{% url 'count' %}" class="btn btn-primary">Basis Calculator</a>
+      <a href="{% url 'kwadraat' %}" class="btn btn-primary">Kwadraat en Wortel trekken</a>
+      <a href="{% url 'circel_omtrek' %}" class="btn btn-primary">Circel Omtrek</a>
+      <a href="{% url 'circel_oppervlakte' %}" class="btn btn-primary">Circel Oppervlakte</a>
+      <a href="{% url 'modulo' %}" class="btn btn-primary">Modulo</a>
+      <a href="{% url 'relativiteitstheorie' %}" class="btn btn-primary">Relativiteitstheorie</a>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  </div>
+
+        {% endblock %}

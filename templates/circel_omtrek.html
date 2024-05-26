@@ -1,0 +1,35 @@
+{% extends 'base.html'%}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circel Omtrek</title>
+</head>
+<body>
+
+    <div class="center">
+        <h3>Circel Omtrek Calculator</h3>
+        <br>
+        <form action="/result_circel_omtrek">
+            <input type="number" step="0.0001" name="number1" placeholder="Diameter circel">
+            <br>
+            <br>
+            <button class="btn btn-secondary" type="submit" name="circel_omtrek">Circel Omtrek Berekenen</button>
+        
+        </form>
+        </div>
+        
+        <style>
+          .center {
+            margin: auto;
+            width: 60%;
+            border: 3px solid #a5addb;
+            padding: 10px;
+          }
+        </style>
+
+        {% endblock %}

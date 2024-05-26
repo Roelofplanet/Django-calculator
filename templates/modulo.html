@@ -1,0 +1,38 @@
+{% extends 'base.html'%}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo</title>
+</head>
+<body>
+
+    <div class="center">
+        <h3>Modulo</h3>
+        <br>
+        
+        <form action="/result_modulo">
+            <input type="number" step="0.0001" name="number1" placeholder="Eerste nummer">
+            <br>
+            <br> 
+            <input type="number" step="0.0001" name="number2" placeholder="tweede nummer">
+            <br>
+            <br>
+            <button class="btn btn-secondary" type="submit" name="modulo">Modulo berekenen</button>
+        </form>
+        </div>
+        
+        <style>
+          .center {
+            margin: auto;
+            width: 60%;
+            border: 3px solid #a5addb;
+            padding: 10px;
+          }
+        </style>
+
+        {% endblock %}

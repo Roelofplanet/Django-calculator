@@ -1,0 +1,48 @@
+.navbar {
+    background-color: #375BDC;
+  }
+
+  .nav-link {
+    color: white !important;
+  }
+
+  .navbar-nav {
+    margin-left: 450px;
+  }
+
+
+
+.card {
+    background-color: #DCDCDC !important;
+}
+
+.btn-primary {
+    background-color: #375BDC !important;
+    border-color: #375BDC !important;
+}
+
+a:hover {
+    transform: scale(1.1) !important;
+}
+
+
+h3 {
+    color:gray !important;
+}
+
+h4 {
+    color:gray !important;
+}
+
+h1 {
+  color:gray !important;
+}
+
+p {
+  color:gray !important;
+}
+
+
+
+  
+
